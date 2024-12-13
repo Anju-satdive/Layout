@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Layout</title>
+  
+</head>
+
+<style>
+
+   
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #ffffff;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.container {
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  width: 1300px;
+  background-color: #d2cfde;
+  padding: 20px;
+  border-radius: 10px;
+  animation: rotate 2s ease-in-out infinite;
+}
+
+
+.one img {
+  width: 950px;
+  height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+
+.content {
+  
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+.two {
+  display: flex;
+ margin: 1px;
+ gap: 10px;
+ object-fit: cover;
+ display: flex;
+ flex-direction: row;
+
+}
+
+.two img {
+  width: 40%;
+  border-radius: 10px;
+  object-fit: cover;
+
+
+}
+
+
+.form {
+  background-color: #fff;
+  color: #060aff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.form input {
+  width: 45%;
+  padding: 15px;
+  margin: 10px ;
+  border: 1px solid #0b0b0b;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+</style>
+
+<body>
+
+    <div class="container">
+
+        <div class="S1"> <img src="https://media.istockphoto.com/id/510795912/photo/india-gate.jpg?s=612x612&w=0&k=20&c=kZkdrEDXEtoLK6Qh8XPywc9VYV95mJXXcWLBxHftN_U=" alt="img" height="500px" width="300px">
+       
+       
+
+        </div>
+        <div class="one">
+          <img src="https://image.slidesdocs.com/responsive-images/background/red-fort-monument-depicted-in-3d-on-a-clean-white-powerpoint-background_15e9422b6d__960_540.jpg" alt="nature-img"> 
+        </div>
+
+
+        <div class="content">
+         
+          <div class="two">
+          
+            <img src="https://plus.unsplash.com/premium_photo-1661919589683-f11880119fb7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW9udW1lbnR8ZW58MHx8MHx8fDA%3D" alt="Small Image 2">
+          </div>
+         
+       
+          <div class="f">
+            <img src="https://static.vecteezy.com/system/resources/previews/011/084/232/non_2x/full-picture-of-hawa-mahal-of-rajasthan-photo.jpg" alt="form" height="2">
+          </div>
+   
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+
+   
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #ffffff;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.container {
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  width: 1200px;
+  background-color: #7461e2;
+  padding: 20px;
+  border-radius: 10px;
+  animation: rotate 2s ease-in-out infinite;
+}
+
+
+.one img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.two {
+  display: flex;
+ margin: 1px;
+ gap: 10px;
+ width: 123%;
+
+}
+
+.two img {
+  width: 40%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+.form {
+  background-color: #fff;
+  color: #060aff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+
+.form input {
+  width: 45%;
+  padding: 15px;
+  margin: 10px ;
+  border: 1px solid #0b0b0b;
+  border-radius: 5px;
+}
+
+.form button {
+  background-color: #ff9900;
+  color: #ffffff;
+  padding: 10px ;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+ 
+
+}
+
+.form button:hover {
+  background-color: #e68a00;
+}
+
+@keyframes rotate
+{
+    0%{
+        transition: transform(0);
+    }
+
+    40%{
+        transition: transform(360deg);
+    }
+
+    100%{
+        transition: transform(360deg);
+    }
+}
+
+
+
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="one">
+          <img src="https://i.pinimg.com/736x/37/a3/8f/37a38f5919cb66598a387a24d3e0f0fc.jpg" alt="Large Bee Image">
+        </div>
+        <div class="content">
+          <div class="text">
+            <h1>The Nature Show</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+          <div class="two">
+            <img src="https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Small Image 1">
+            <img src="https://www.pgclick.com/file_uploads/pg_photos/1000/UHtW1_1558547883.jpg" alt="Small Image 2">
+          </div>
+         
+          <div class="form">
+            <h2>Join Us!</h2>
+            <form>
+              <input type="text" placeholder="Name" required>
+              <input type="email" placeholder="Email" required>
+              <button type="submit">I want to be a part of it.</button>
+            </form>
+          </div>
+   
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+
+   
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #ffffff;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.container {
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  width: 1200px;
+  background-color: #7461e2;
+  padding: 20px;
+  border-radius: 10px;
+  animation: rotate 2s ease-in-out infinite;
+}
+
+
+
+
+.one img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.two {
+  display: flex;
+ margin: 1px;
+ gap: 10px;
+ width: 123%;
+ object-fit: cover;
+ display: flex;
+
+}
+
+.two img {
+  width: 40%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+.form {
+  background-color: #fff;
+  color: #060aff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+
+.form input {
+  width: 45%;
+  padding: 15px;
+  margin: 10px ;
+  border: 1px solid #0b0b0b;
+  border-radius: 5px;
+}
+
+.form button {
+  background-color: #ff9900;
+  color: #ffffff;
+  padding: 10px ;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+ 
+
+}
+
+.form button:hover {
+  background-color: #e68a00;
+}
+
+
+
+
+
+</style>
+
+<body>
+
+    <div class="container">
+
+        <div class="S1"> <img src="https://t4.ftcdn.net/jpg/05/78/60/99/240_F_578609973_kGyUqmJ2Gl9wGqag78ciyDbUFaB2hdU5.jpg" alt="img" >
+       
+        <div class="S2">
+                <img src="https://t4.ftcdn.net/jpg/04/39/69/99/360_F_439699926_GkaQTcxPchsvvtdrZ98cFQh1a8HQICwP.jpg" alt="image" height="240px" width="">
+            </div>
+
+        </div>
+        <div class="one">
+          <img src="https://as2.ftcdn.net/v2/jpg/05/99/63/73/1000_F_599637394_Gy6ExnnhI7evS05xww3QiCdNhT0QHy4x.jpg" alt="nature-img"> 
+        </div>
+        <div class="content">
+          <div class="text">
+            
+          </div>
+          <div class="two">
+            <img src="https://as1.ftcdn.net/v2/jpg/02/55/92/44/1000_F_255924443_xnmyQh2iHdQKfY5o16mkIVjzJu1t6QDt.jpg" alt="Small Image 1">
+            <img src="https://as2.ftcdn.net/v2/jpg/06/23/24/03/1000_F_623240349_aCmGPKwic0PIumohlr0jgYPzAozuJdE3.jpg" alt="Small Image 2">
+          </div>
+         
+          <div class="f">
+            <img src="https://as2.ftcdn.net/v2/jpg/09/56/21/47/1000_F_956214780_DCpD9ClP6XL9Lgy2DcdotriwcK2BQAaD.jpg" alt="form" height="270px"
+            width="600px">
+          </div>
+   
+
+  </div>
+</body>
+</html>
